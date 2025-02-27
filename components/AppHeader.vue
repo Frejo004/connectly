@@ -19,10 +19,13 @@ const links = [
       </NuxtLink>
     </template>
 
-    <UNavigationLinks :links="links" />
+    <template #center>
+        <UHeaderLinks :links="links" />
+    </template>
 
     <template #right>
-        <UButton label="Se connecter" variant="solid" color= "orange" to"/login" />
+        <UButton label="Se connecter" variant="solid" color="orange" to="/login" />
+        <UColorModeButton/>
     </template>
   </UHeader>
 </template>
