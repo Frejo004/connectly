@@ -1,4 +1,6 @@
 <script setup lang="ts">
+
+
 const links = [
   {
     label:'Blog',
@@ -9,6 +11,13 @@ const links = [
     to:'/about',
   }
 ];
+
+const isPanelOpen = ref(false);
+
+function togglePanel() {
+  isPanelOpen.value = !isPanelOpen.value;
+}
+
 </script>
 
 <template>
@@ -26,6 +35,10 @@ const links = [
     <template #right>
         <UButton label="Se connecter" variant="solid" color="orange" to="/login" />
         <UColorModeButton/>
+    </template>
+
+    <template #panel>
+      <UAsideLinks :links="links" />
     </template>
   </UHeader>
 </template>
