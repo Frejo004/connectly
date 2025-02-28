@@ -4,7 +4,7 @@
       <AppHeader />
     </header>
     <UMain>
-      <slot />
+      <slot  />
     </UMain>
     <footer>
       <AppFooter />
