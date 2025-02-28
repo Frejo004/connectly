@@ -14,8 +14,8 @@ const {data: posts} = await useAsyncData('posts',  () => queryCollection('blog')
             :image="post.image" 
             :authors="post.auteurs"
             :date="formatDate(post.date)"
-            :badge="{...post.badge,  variant: 'subtle'}">
-            :to="post.path"
+            :badge="{...post.badge,  variant: 'subtle'}"
+            :to="post.path">
             </UBlogPost>
         </UBlogList>
     </UContainer>

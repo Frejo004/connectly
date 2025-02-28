@@ -1,11 +1,14 @@
 <template>
   <div>
+
     <header>
       <AppHeader />
     </header>
+    
     <UMain>
       <slot  />
     </UMain>
+
     <footer>
       <AppFooter />
     </footer>

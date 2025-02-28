@@ -58,7 +58,7 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
             </UPageBody>
 
             <template v-if="post.body.toc?.links.length" #right>
-                <UContentToc :links"post.body.toc.links" />
+                <UContentToc :links="post.body.toc.links" />
             </template>
         </UPage>
     </UContainer>
