@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const columns = [
+const links = [
   {
     label: "Service",
     children: [
@@ -48,34 +48,36 @@ const columns = [
 <template>
   <UFooter>
     <template #top>
-        <UContainer>
-            <UFooterColumn :links="links">
-                <template #right>
-                    <form>
-                        <UFormFiel name="email" label="S'incrire à notre newsletter" size="lg" />
-                        <template #right >
-                            <UButton type="submit" size="xs" color="orange" label="S'incrire" />
-                        </template>
-                    </form>
-                </template >
-            </UFooterColumn>
-        </UContainer>
+      <UContainer>
+        <UFooterColumns :links="links">
+          <template #right>
+            <form>
+              <Uformfield name="email" label="S'inscrire à notre newsleter" size="lg">
+                <UInput type="email" class="w-full" placeholder="Entrez votre email">
+                  <template #trailing>
+                    <UButton type="submit" size="xs" color="orange" label="S'inscrire" />
+                  </template>
+                </UInput>
+              </Uformfield>
+            </form>
+          </template>
+        </UFooterColumns>
+      </UContainer>
     </template>
-
-    <template #left >
-        <p class="text-sm">
-            Copyright &copy; {{ new Date().getFullYear() }}. Tous droits réservés.
-        </p>
+    <template #left>
+      <p class="test-sm">
+        Copyright &copy; {{ new Date().getFullYear() }}. Tous droits résrvés
+      </p>
     </template>
-
-    <template #right >
-        <UColorModeButton/>
+    <template #center>
+      <UButton
+        color="primary"
+        to="https://github.com/Frejo004/connectly"
+        target="_blank"
+        icon="devicon:githubcodespaces"
+      />
     </template>
-
-    <template #center >
-        <UButon to="https://github" target="_blank" label="Visiter Mon GitHub"/>
-    </template>
-
-
   </UFooter>
 </template>
+
+<style></style>
