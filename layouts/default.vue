@@ -6,7 +6,7 @@
     </header>
     
     <UMain>
-      <slot  />
+      <slot />
     </UMain>
 
     <footer>
