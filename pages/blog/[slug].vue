@@ -7,8 +7,26 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
     return queryCollectionItemSurroundings('blog', route.path ,{
         fields:['description']
     });
-});
+);
 
+const title = post.value?.title,
+const abc = runtimeConfig.public.
+const url = `${runtimeConfig.public.app_url}${soute.fullPath}`,
+
+
+useHead({
+    `title: Connectly - ${title}`,
+})
+
+useSoeMeta({
+    ogTitle: title,
+    ogDescription: description,
+    ogType: 'article',
+    ogUrl: url,
+    ogImage: {
+        ulr: post?value!.imagei.scri
+    }
+ :})
 
 </script>
 
