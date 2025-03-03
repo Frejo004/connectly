@@ -1,0 +1,86 @@
+title: Connectly - Le blog des passionnés du numérique
+description: Connectly est une plateforme dédiée aux passionnés de technologie, offrant des articles inspirants, des tutoriels et des analyses approfondies sur le monde du numérique.
+navigation: false
+hero:
+  title: Rejoignez la communauté Connectly
+  description: Connectly rassemble des experts et des curieux du numérique pour partager connaissances, expériences et tendances. Découvrez nos articles exclusifs et approfondissez vos compétences avec nos tutoriels détaillés.
+  links:
+    - label: Découvrir les articles
+      icon: i-lucide-arrow-right
+      trailing: true
+      to: /articles
+      target: _self
+      size: xl
+    - label: Rejoindre la communauté
+      icon: i-lucide-users
+      size: xl
+      color: neutral
+      variant: subtle
+      to: /inscription
+      target: _self
+  images:
+    src: /connectly-hero.webp
+sections:
+  - title: Une expertise accessible à tous
+    description: Explorez un large éventail de sujets, des bases du développement web aux technologies de pointe en intelligence artificielle.
+    id: features
+    orientation: horizontal
+    features:
+      - name: Articles de qualité
+        description: Des articles rédigés par des experts du domaine, enrichis d’exemples concrets et d’analyses approfondies.
+        icon: i-lucide-book-open
+      - name: Tutoriels interactifs
+        description: Apprenez en pratiquant grâce à nos tutoriels détaillés et nos exercices guidés.
+        icon: i-lucide-code
+      - name: Communauté engagée
+        description: Partagez vos expériences, posez vos questions et échangez avec des passionnés comme vous.
+        icon: i-lucide-users
+  - title: Un contenu adapté à votre niveau
+    description: Que vous soyez débutant ou expert, Connectly propose du contenu pertinent et adapté à votre niveau de compétence.
+    orientation: horizontal
+    reverse: true
+    features:
+      - name: Pour débutants
+        description: Des guides accessibles pour bien démarrer dans le monde du développement et du numérique.
+        icon: i-lucide-lightbulb
+      - name: Pour avancés
+        description: Approfondissez vos connaissances avec des analyses techniques et des études de cas détaillées.
+        icon: i-lucide-trending-up
+      - name: Mise à jour continue
+        description: Nous actualisons régulièrement notre contenu pour vous tenir informé des dernières tendances.
+        icon: i-lucide-refresh-cw
+features:
+  title: Pourquoi choisir Connectly ?
+  description: Une source fiable d’informations, une communauté engagée et des outils pour progresser efficacement dans le monde du numérique.
+  items:
+    - title: Contenu exclusif
+      description: Des articles et des tutoriels inédits disponibles uniquement sur Connectly.
+      icon: i-lucide-star
+    - title: Apprentissage interactif
+      description: Des exercices pratiques et des défis pour tester vos compétences.
+      icon: i-lucide-terminal
+    - title: Réseau d’experts
+      description: Des professionnels du secteur qui partagent leurs expériences et conseils.
+      icon: i-lucide-user-check
+    - title: Événements en ligne
+      description: Participez à nos webinaires et conférences pour approfondir vos connaissances.
+      icon: i-lucide-video
+    - title: Plateforme intuitive
+      description: Une navigation fluide et une interface pensée pour une expérience agréable.
+      icon: i-lucide-layout-grid
+    - title: Ressources gratuites
+      description: Accédez à une bibliothèque de ressources et outils utiles pour votre apprentissage.
+      icon: i-lucide-folder
+cta:
+  title: Rejoignez Connectly dès aujourd’hui !
+  description: Profitez d’un accès illimité aux meilleurs articles et tutoriels sur le numérique.
+  links:
+    - label: Inscription gratuite
+      to: '/inscription'
+      target: _self
+      icon: i-lucide-user-plus
+    - label: En savoir plus
+      to: '/a-propos'
+      trailingIcon: i-lucide-info
+      target: _self
+      variant: subtle
